@@ -1,0 +1,28 @@
+{
+  "name": "sky-starter-kit",
+  "appPath": "app",
+  "description": "Sky Starter Kit project",
+  "authors": [
+    "David Dias (diasd@proximity.bbdo.fr)"
+  ],
+  "moduleType": [
+    "node",
+    "es6"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git@git.proximity.fr:proximity-mauritius/sky-starter-kit.git"
+  },
+  "license": "MIT",
+  "homepage": "http://git.proximity.fr/proximity-mauritius/sky-starter-kit/",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "private": true,
+  "dependencies": {},
+  "devDependencies": {}
+}

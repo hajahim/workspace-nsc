@@ -1,0 +1,35 @@
+image: node:4.2.2
+
+before_script:
+  # - npm set progress=false
+  # - npm install --silent
+
+cache:
+  directories:
+    - node_modules
+
+stages:
+  - lint
+  - test
+  - build
+  - clean_up
+
+lint:
+  stage: lint
+  script:
+    - npm install -g eslint --silent
+    - npm install -g eslint-plugin-html eslint-friendly-formatter eslint-plugin-babel eslint-plugin-import eslint-plugin-jsx-a11y --silent
+    - npm install -g eslint-config-standard eslint-plugin-standard eslint-plugin-promise --silent
+    - npm run lint
+
+run_tests:
+  stage: test
+  script:
+    - npm install -g mocha chai --silent
+    - npm test
+
+clean_up_job:
+  stage: clean_up
+  script:
+    - rm -rf node_modules
+  when: on_failure

@@ -1,0 +1,13 @@
+# Run docker-compose build
+# Run docker-compose up
+
+web:
+  build: .
+  dockerfile: .docker/node.development.dockerfile
+  environment:
+    - NODE_ENV=development
+  volumes:
+    - "./app:/src/app"
+  ports:
+    - "3030:3000"
+    - "35729:35729"
