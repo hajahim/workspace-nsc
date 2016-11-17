@@ -1,5 +1,5 @@
 
-@lost gutter 32px;
+@lost gutter 2.5%;
 @lost flexbox flex;
 @lost cycle none;
 
@@ -11,167 +11,361 @@
 .row-grid {
   lost-flex-container: row;
   height: 100%;
-  padding-left: 32px;
-  padding-right: 32px;
+  padding-left: 2.5%;
+  padding-right: 2.5%;
 }
 
 .footer-grid {
-  @include media("all-tablets" "all-phones"){
+  @include media("all-tablets" "all-phones") {
     flex-direction: column-reverse;
   }
 }
 
-.col-lg-2 {
-  lost-column: 1/6;
+.col-lg-1 {
   background-color: rgba(184, 223, 242, 0.5);
-
-  @include media("desktop" "all-tablets" "all-phones"){
-    lost-column: 1/1;
+  @include media("desktop") {
+    lost-column: 1/12 !important;
   }
+  lost-column: 1/1;
 }
 
+.col-lg-2 {
+  background-color: rgba(184, 223, 242, 0.5);
+  @include media("desktop") {
+    lost-column: 1/6 !important;
+  }
+  lost-column: 1/1;
+}
+
+.col-lg-3 {
+  background-color: rgba(184, 223, 242, 0.5);
+  @include media("desktop") {
+    lost-column: 1/4 !important;
+  }
+  lost-column: 1/1;
+}
 
 .col-lg-4 { 
   background-color: rgba(184, 223, 242, 0.5);
-
-  @include media(print){
-      lost-column: 1/3;
+  @include media("desktop") {
+    lost-column: 1/3 !important;
   }
+  lost-column: 1/1;
+}
 
-  @include media("desktop" "all-tablets" "all-phones"){
-    lost-column: 1/1;
+.col-lg-5 { 
+  background-color: rgba(184, 223, 242, 0.5);
+  @include media("desktop") {
+    lost-column: 5/12 !important;
   }
-
+  lost-column: 1/1;
 }
 
 .col-lg-6 {
   background-color: rgba(184, 223, 242, 0.5);
-
-  @include media(print){
-      lost-column: 1/2;
-  }  
-
-  @include media("desktop" "all-tablets" "all-phones"){
-    lost-column: 1/1;
+  @include media("desktop") {
+    lost-column: 1/2 !important;
   }
+  lost-column: 1/1;
+}
+
+.col-lg-7 {
+  background-color: rgba(184, 223, 242, 0.5);
+  @include media("desktop") {
+    lost-column: 7/12 !important;
+  }
+  lost-column: 1/1;
 }
 
 .col-lg-8 {
-  lost-column: 2/3;
   background-color: rgba(184, 223, 242, 0.5);
-
-  @include media("desktop" "all-tablets" "all-phones"){
-    lost-column: 1/1;
+  @include media("desktop") {
+    lost-column: 2/3 !important;
   }
+  lost-column: 1/1;
 }
 
-.col-lg-10 {
+.col-lg-9 {
   background-color: rgba(184, 223, 242, 0.5);
-
-  @include media(print){
-      lost-column: 5/6;
+  @include media("desktop") {
+    lost-column: 9/12 !important;
   }
+  lost-column: 1/1;
+}
 
- @include media("desktop" "all-tablets" "all-phones"){
-    lost-column: 1/1;
+.col-lg-10 { 
+  background-color: rgba(184, 223, 242, 0.5);
+  @include media("desktop") {
+    lost-column: 5/6 !important;
   }
+  lost-column: 1/1;
+}
+
+.col-lg-11 { 
+  background-color: rgba(184, 223, 242, 0.5);
+  @include media("desktop") {
+    lost-column: 11/12 !important;
+  }
+  lost-column: 1/1;
 }
 
 .col-lg-12 {
   background-color: rgba(184, 223, 242, 0.5);
-
-  @include media(print){
-      lost-column: 1/1;
+  @include media("desktop") {
+    lost-column: 1/1 !important;
   }
+  lost-column: 1/1;
+}
 
-  @include media("desktop" "all-tablets" "all-phones"){
+.col-md-1 {
+  background-color: rgba(184, 223, 242, 0.5);
+  @include media("all-tablets") {
+    lost-column: 1/12 !important;
+  }
+  @include media("desktop") {
+    lost-column: 1/12;
+  }
+  @include media("all-phones") {
     lost-column: 1/1;
   }
 }
 
 .col-md-2 {
-  lost-column: 1/6;
-  background-color: #b8dff2;
-
-  @include media("all-tablets" "all-phones"){
+  background-color: rgba(184, 223, 242, 0.5);
+  @include media("all-tablets") {
+    lost-column: 1/6 !important;
+  }
+  @include media("desktop") {
+    lost-column: 1/6;
+  }
+  @include media("all-phones") {
     lost-column: 1/1;
   }
 }
 
+.col-md-3 {
+  background-color: rgba(184, 223, 242, 0.5);
+  @include media("all-tablets") {
+    lost-column: 3/12 !important;
+  }
+  @include media("desktop") {
+    lost-column: 3/12;
+  }
+  @include media("all-phones") {
+    lost-column: 1/1;
+  }
+}
 
 .col-md-4 {
-  lost-column: 1/3;
   background-color: rgba(184, 223, 242, 0.5);
+  @include media("all-tablets") {
+    lost-column: 1/3 !important;
+  }
+  @include media("desktop") {
+    lost-column: 1/3;
+  }
+  @include media("all-phones") {
+    lost-column: 1/1;
+  }
+}
 
-  @include media("all-tablets" "all-phones"){
+.col-md-5 {
+  background-color: rgba(184, 223, 242, 0.5);
+  @include media("all-tablets") {
+    lost-column: 5/12 !important;
+  }
+  @include media("desktop") {
+    lost-column: 5/12;
+  }
+  @include media("all-phones") {
     lost-column: 1/1;
   }
 }
 
 .col-md-6 {
-  lost-column: 1/2;
   background-color: rgba(184, 223, 242, 0.5);
+  @include media("all-tablets") {
+    lost-column: 1/2 !important;
+  }
+  @include media("desktop") {
+    lost-column: 1/2;
+  }
+  @include media("all-phones") {
+    lost-column: 1/1;
+  }
+}
 
-  @include media("all-tablets" "all-phones"){
+.col-md-7 {
+  background-color: rgba(184, 223, 242, 0.5);
+  @include media("all-tablets") {
+    lost-column: 7/12 !important;
+  }
+  @include media("desktop") {
+    lost-column: 7/12;
+  }
+  @include media("all-phones") {
     lost-column: 1/1;
   }
 }
 
 .col-md-8 {
-  lost-column: 2/3;
   background-color: rgba(184, 223, 242, 0.5);
+  @include media("all-tablets") {
+    lost-column: 2/3 !important;
+  }
+  @include media("desktop") {
+    lost-column: 2/3;
+  }
+  @include media("all-phones") {
+    lost-column: 1/1;
+  }
+}
 
- @include media("all-tablets" "all-phones"){
+.col-md-9 {
+  background-color: rgba(184, 223, 242, 0.5);
+  @include media("all-tablets") {
+    lost-column: 9/12 !important;
+  }
+  @include media("desktop") {
+    lost-column: 9/12;
+  }
+  @include media("all-phones") {
     lost-column: 1/1;
   }
 }
 
 .col-md-10 {
-  lost-column: 5/6;
   background-color: rgba(184, 223, 242, 0.5);
+  @include media("all-tablets") {
+    lost-column: 5/6 !important;
+  }
+  @include media("desktop") {
+    lost-column: 5/6;
+  }
+  @include media("all-phones") {
+    lost-column: 1/1;
+  }
+}
 
-  @include media("all-tablets" "all-phones"){
+.col-md-11 {
+  background-color: rgba(184, 223, 242, 0.5);
+  @include media("all-tablets") {
+    lost-column: 11/12 !important;
+  }
+  @include media("desktop") {
+    lost-column: 11/12;
+  }
+  @include media("all-phones") {
     lost-column: 1/1;
   }
 }
 
 .col-md-12 {
-  lost-column: 1/1;
   background-color: rgba(184, 223, 242, 0.5);
-
-  @include media("all-tablets" "all-phones"){
+  @include media("all-tablets") {
+    lost-column: 1/1 !important;
+  }
+  @include media("desktop") {
+    lost-column: 1/6;
+  }
+  @include media("all-phones") {
     lost-column: 1/1;
   }
 }
 
-.col-sm-2 {
-  lost-column: 1/6;
+.col-sm-1 {
   background-color: rgba(184, 223, 242, 0.5);
+  @include media("all-phones") {
+    lost-column: 1/12 !important;
+  }
+  lost-column: 1/12;
 }
 
+.col-sm-2 {
+  background-color: rgba(184, 223, 242, 0.5);
+  @include media("all-phones") {
+    lost-column: 1/6 !important;
+  }
+  lost-column: 1/6;
+}
+
+.col-sm-3 {
+  background-color: rgba(184, 223, 242, 0.5);
+  @include media("all-phones") {
+    lost-column: 3/12 !important;
+  }
+  lost-column: 3/12;
+}
 
 .col-sm-4 {
-  lost-column: 1/3;
   background-color: rgba(184, 223, 242, 0.5);
+  @include media("all-phones") {
+    lost-column: 1/3 !important;
+  }
+  lost-column: 1/3;
+}
+
+.col-sm-5 {
+  background-color: rgba(184, 223, 242, 0.5);
+  @include media("all-phones") {
+    lost-column: 5/12 !important;
+  }
+  lost-column: 5/12;
 }
 
 .col-sm-6 {
-  lost-column: 1/2;
   background-color: rgba(184, 223, 242, 0.5);
+  @include media("all-phones") {
+    lost-column: 1/2 !important;
+  }
+  lost-column: 1/2;
+}
+
+.col-sm-7 {
+  background-color: rgba(184, 223, 242, 0.5);
+  @include media("all-phones") {
+    lost-column: 7/12 !important;
+  }
+  lost-column: 7/12;
 }
 
 .col-sm-8 {
-  lost-column: 2/3;
   background-color: rgba(184, 223, 242, 0.5);
+  @include media("all-phones") {
+    lost-column: 2/3 !important;
+  }
+  lost-column: 2/3;
+}
+
+.col-sm-9 {
+  background-color: rgba(184, 223, 242, 0.5);
+  @include media("all-phones") {
+    lost-column: 9/12 !important;
+  }
+  lost-column: 9/12;
 }
 
 .col-sm-10 {
-  lost-column: 5/6;
   background-color: rgba(184, 223, 242, 0.5);
+  @include media("all-phones") {
+    lost-column: 5/6 !important;
+  }
+  lost-column: 5/6;
+}
+
+.col-sm-11 {
+  background-color: rgba(184, 223, 242, 0.5);
+  @include media("all-phones") {
+    lost-column: 11/12 !important;
+  }
+  lost-column: 11/12;
 }
 
 .col-sm-12 {
-  lost-column: 1/1,;
   background-color:rgba(184, 223, 242, 0.5);
+  @include media("all-phones") {
+    lost-column: 1/1 !important;
+  }
+  lost-column: 1/1;
 }
 
