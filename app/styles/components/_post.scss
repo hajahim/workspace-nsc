@@ -1,0 +1,29 @@
+.post {
+  @include media("all-tablets" "all-phones") {
+    text-align: left !important;
+  }
+}
+.post--right img {
+    width:100%;
+    height:auto;
+}
+.post--left-title {
+  padding-top: 70px;
+  text-transform: uppercase;
+  color:$red-nsc;
+}
+.post--left-txt {
+  color:$purple-nsc;
+}
+
+
+.post--right-title {
+  padding-top: 70px;
+  text-transform: uppercase;
+  text-align: right;
+  color:$red-nsc;
+}
+.post--right-txt {
+  text-align: right;
+  color: $purple-nsc;
+}

@@ -3,22 +3,30 @@
 @import "utilities/mixins";
 
 /*BASE*/
-@import "base/fonts";
 @import "base/colors";
 @import "base/body";
+@import "base/fonts";
+@import "base/form";
 @import "base/generic";
-@import "base/headings";
-@import "base/main";
-@import "base/footer";
-@import "base/typography";
-@import "base/lists";
 @import "base/links";
+@import "base/lists";
+@import "base/media";
+@import "base/typography";
 
 /*LAYOUT*/
+@import "layout/footer";
 @import "layout/grid";
+@import "layout/header";
+@import "layout/main";
+@import "layout/sidebar";
 
 /*COMPONENTS*/
+@import "components/navigation";
+@import "components/post";
+@import "components/slicker";
 @import "components/breadcrumb";
+@import "components/button";
+@import "components/slider";
 @import "components/navbar";
 
 /*VENDORS*/

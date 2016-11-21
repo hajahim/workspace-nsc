@@ -1,0 +1,70 @@
+.l-footer {
+  width: 100%;
+  min-height: 80px;
+  padding-top:20px;
+  text-align: center;
+
+  @include media("all-tablets" "all-phones") {
+    border-top: 1px $purple-nsc solid;
+    padding-top: 30px;
+  }
+}
+.footer__copyright{
+  text-transform:uppercase;
+  color:$purple-nsc;
+}
+
+.footer__menu {
+  text-transform:uppercase;
+  position: relative;
+}
+
+.footer__menu a {
+  text-decoration: none;
+  padding: 2%;
+}
+
+.footer__menu .navigation {
+  font-size: 14px;
+  @include media(desktop) {
+    bottom: 15px;
+  }
+}
+
+
+.footer-grid {
+  @include media("all-tablets" "all-phones"){
+    lost-center:500px;
+    flex-direction: column-reverse;
+  }
+}
+
+.footer__logo {
+    @include media("all-tablets"){
+      lost-center: 200px 120px;
+    }
+    @include media("all-phones"){
+      lost-center:195px 70px;
+    }
+}
+.img--footer{
+  width:208px;
+  height:auto;
+  height:50px;
+}
+
+.footer__copyright{
+    font-size:13px;
+    font-weight:bold;
+    @include media("all-tablets" "all-phones"){
+      lost-align:center;
+      padding-top:10px;
+    }
+    @include media("desktop"){
+      padding-top:55px;
+    }
+    @include media("all-phones"){
+      font-size:10px;;
+    }
+}
+

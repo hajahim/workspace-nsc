@@ -1,0 +1,32 @@
+.btn {
+    display: inline-block;
+    padding: 6px 12px;
+    margin-bottom: 0;
+    text-align: center;
+    cursor: pointer;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+
+.btn-purple {
+    color: #fff;
+    background-color: $purple-nsc;
+    border-color: $purple-nsc;
+}
+
+.btn--large {
+    padding: 6px 20px;
+}
+
+.btn--search {
+  @include media("all-tablets" "all-phones") {
+    display: block;
+    height: 30px;
+    width: 30px;
+    margin: auto;
+    margin-top: 50%;
+    background-image: url("../images/icon/header-search.svg");
+    background-size: contain;
+  }
+}

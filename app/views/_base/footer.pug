@@ -1,8 +1,13 @@
 footer.l-footer
   .row-grid.footer-grid
-    .col-md-4
-      p copyright
-    .col-md-4.img--responsive
-      p logo
-    .col-md-4
-      p menu
+    .col-lg-4.footer__copyright © mondelez international all rights reserved 
+      
+    .col-lg-3.footer__logo 
+      img(class="img--footer" src="/images/logo/desktop/logo-mondolez.png")
+    .col-lg-5
+      .row-grid.footer__menu
+        - var menuone = ["contact us", "accessibility", "legal notices","privacy policy","site map"];
+        ul.navigation
+          for name in menuone
+            a(href="#")
+              li= name

@@ -1,8 +1,55 @@
 header.l-header
+
   .row-grid
-    .col-md-2
-      p menu
-    .col-md-8.img--responsive
-      p logo
-    .col-md-2
-      p search
+
+    .col-lg-12
+
+      .row-grid
+
+        .col-sm-2.visible-md
+          .header__menu--mobile
+            input(type="checkbox")
+            .header__menu--hamburger
+              span
+              span
+              span
+            ul.menu
+              li
+                a Test 1
+              li 
+                a Test 2
+
+        .col-sm-8.col-lg-5
+          .header__logo
+            img(class="img--responsive" src="/images/logo/desktop/nutrition-science-corner.png")
+
+        .col-sm-2.visible-md
+          .header__search--mobile
+            a.btn--search
+        
+        //.col-lg-7.hidden-md
+
+          .header__menu--desktop
+            ul.navigation
+              li 
+                a about us
+              li 
+                a nutrition science
+              li 
+                a our collaborations
+              li 
+                a well being
+              li 
+                a contact us
+
+    .col-lg-12.hidden-md
+
+      .row-grid
+
+        .col-lg-5
+
+        .col-lg-7
+
+          .row-grid
+          
+            .header__search--desktop
