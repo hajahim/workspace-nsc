@@ -2,17 +2,81 @@ extends ../_base/layout.pug
 
 block main
 
-  .slider
-    p slider
+  .l-slider
+    .row-grid
+      .col-lg-12
+        .slider__head
+          section.regular.slider
+            div
+              img(src="/images/img-slider1.png")
+            div
+              img(src="/images/plat-based.png")
+            div
+              img(src="/images/img-slider1.png")
+            div
+              img(src="/images/plat-based.png")
+        .slider__ancre
+          ul 
+            #benefical(onclick='scrollTo("benefical","benefical-ancre")')
+              li beneficial carbohydrates
+                img(src="./images/goutte.png") 
+            #nutrition(onclick='scrollTo("nutrition","nutrition-ancre")')
+              li plant-based nutrition
+                img(src="./images/goutte.png") 
+            #health(onclick='scrollTo("health","health-ancre")')
+              li healthy eating behaviors
+                img(src="./images/goutte.png") 
+            #oral(onclick='scrollTo("oral","oral-ancre")')
+              li oral health
+                img(src="./images/goutte.png") 
+          .slider__blocktxt#readmore
+            h1.bloctxt-title our mission
+            p we believe in driving innovation and success through nutrition research
+            a(href="#readmore")
+              h3.slider__blocktxt-readmore-icon >>> 
+              h3.slider__blocktxt-readmore-txt read more
 
   .block-content
-    .row-grid
+    .row-grid.post
       .col-lg-6
-        h1 Info
+        #benefical-ancre
+          .post--left
+            h1.post--left-title benefical carbohydrates
+            .post--left-txt
+              p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam dictum, elit sit amet porta molestie, tellus dolor ultricies justo, nec pretium sapien lacus nec ante. Donec varius turpis sit amet ullamcorper condimentum. Sed leo urna, viverra id neque at, congue tincidunt diam. Aenean iaculis purus ligula, quis rutrum neque condimentum ut. Praesent in pellentesque ex, in volutpat ante. Nunc scelerisque sed ex vitae malesuada. Fusce sed commodo nulla. Mauris dictum mauris convallis mi ultricies pellentesque. Mauris viverra bibendum odio, ac bibendum sapien viverra in. Vestibulum egestas urna ut consequat sodales. 
       .col-lg-6
-        h1 Image
-    .row-grid
+        .post--right
+          img(class="img--responsive" src="/images/beneficial.png")
+
+    .row-grid.post
+      .row-grid_withback
+        #nutrition-ancre
+          .row-grid
+            .col-lg-6
+              .first-block
+            .col-lg-6
+              h1.post--right-title plat based nutrition
+              .post--right-txt
+                p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam dictum, elit sit amet porta molestie, tellus dolor ultricies justo, nec pretium sapien lacus nec ante. Donec varius turpis sit amet ullamcorper condimentum. Sed leo urna, viverra id neque at, congue tincidunt diam. Aenean iaculis purus ligula, quis rutrum neque condimentum ut. Praesent in pellentesque ex, in volutpat ante. Nunc scelerisque sed ex vitae malesuada. Fusce sed commodo nulla. Mauris dictum mauris convallis mi ultricies pellentesque. Mauris viverra bibendum odio, ac bibendum sapien viverra in. Vestibulum egestas urna ut consequat sodales.
+      .row-grid.post
+        .col-lg-6
+          #health-ancre
+            .post--left
+              h1.post--left-title healthy eating behaviors
+              .post--left-txt
+                p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam dictum, elit sit amet porta molestie, tellus dolor ultricies justo, nec pretium sapien lacus nec ante. Donec varius turpis sit amet ullamcorper condimentum. Sed leo urna, viverra id neque at, congue tincidunt diam. Aenean iaculis purus ligula, quis rutrum neque condimentum ut. Praesent in pellentesque ex, in volutpat ante. Nunc scelerisque sed ex vitae malesuada. Fusce sed commodo nulla. Mauris dictum mauris convallis mi ultricies pellentesque. Mauris viverra bibendum odio, ac bibendum sapien viverra in. Vestibulum egestas urna ut consequat sodales.
+        .col-lg-6
+          .post--right
+            img(class="img--responsive" src="/images/healthy.png")
+
+    .row-grid.post
       .col-lg-6
-        h1 Info
+        #oral-ancre
+          .post--left
+           img(class="img--responsive" src="/images/oral.png")
       .col-lg-6
-        h1 Image
+        .post--right
+          h1.post--right-title oral health
+          .post--right-txt
+              p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam dictum, elit sit amet porta molestie, tellus dolor ultricies justo, nec pretium sapien lacus nec ante. Donec varius turpis sit amet ullamcorper condimentum. Sed leo urna, viverra id neque at, congue tincidunt diam. Aenean iaculis purus ligula, quis rutrum neque condimentum ut. Praesent in pellentesque ex, in volutpat ante. Nunc scelerisque sed ex vitae malesuada. Fusce sed commodo nulla. Mauris dictum mauris convallis mi ultricies pellentesque. Mauris viverra bibendum odio, ac bibendum sapien viverra in. Vestibulum egestas urna ut consequat sodales.
+

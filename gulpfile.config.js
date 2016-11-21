@@ -34,7 +34,7 @@ export default {
     DEST: './build/fonts/icons/'
   },
   images: {
-    SRC: './app/images/**/*.{jpg,jpeg,png}',
+    SRC: './app/images/**/*.{jpg,jpeg,png,svg}',
     DEST: './build/images/'
   },
   pug: {
